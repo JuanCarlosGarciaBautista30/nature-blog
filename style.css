@@ -1,0 +1,122 @@
+:root {
+  --green-color: #01af56;
+  --shadow-color: #e9e9e9;
+}
+
+* {
+  font-family: "Ramabhadra";
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0;
+}
+
+.buttons-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.rounded-button {
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--green-color);
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+.box-shadow {
+  /*primer valor = eje x, seg valor eje Y, tercer valor= blur radius o degradado cuarto valor color*/
+  box-shadow: 4px 4px 15px 3px var(--shadow-color),
+    -4px -4px 15px 3px var(--shadow-color);
+}
+
+.flat-button {
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  background-color: white;
+}
+
+.blog-button {
+  padding-right: 0;
+}
+
+.title-section {
+  margin-top: 5px;
+  font-size: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.search-section {
+  margin-top: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-search {
+  width: 320px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 0;
+  display: flex;
+  outline: none;
+}
+.footer-section {
+  margin-top: 80px;
+  border-radius: 10%;
+  font-size: 40px;
+}
+
+.img-content {
+  width: 98%;
+  height: 100%;
+  border-radius: 9%;
+}
+
+/*media cueri*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --green-color: #f97300;
+    --shadow-color: #E3651D;
+  }
+  body {
+    background-color: #191919;
+    color: #E3651D;
+  }
+
+  .flat-button {
+
+    background-color: transparent;
+    color: #E3651D;
+  }
+
+  .rounded-button{
+    background-color: #BED754;
+  }
+
+  .input-search{
+
+    background-color: #191919;
+  }
+
+  
+}
+
+/*color del h1 o título*/
+/* <span> su display es siempre en fila</span>
+*/
+
+h1 { color: black }
+span { color: var(--green-color)}
