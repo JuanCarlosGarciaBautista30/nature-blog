@@ -85,38 +85,5 @@
   border-radius: 9%;
 }
 
-/*media cueri*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --green-color: #f97300;
-    --shadow-color: #E3651D;
-  }
-  body {
-    background-color: #191919;
-    color: #E3651D;
-  }
-
-  .flat-button {
-
-    background-color: transparent;
-    color: #E3651D;
-  }
-
-  .rounded-button{
-    background-color: #BED754;
-  }
-
-  .input-search{
-
-    background-color: #191919;
-  }
-
-  
-}
-
-/*color del h1 o título*/
-/* <span> su display es siempre en fila</span>
-*/
-
 h1 { color: black }
 span { color: var(--green-color)}
